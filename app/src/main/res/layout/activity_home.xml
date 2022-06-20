@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amnesiascheduler.ephraim.com.amnesiascheduler.HomeActivity"
+    android:background="@drawable/app_back"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/main_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:id="@+id/main_line11"
+        android:layout_below="@+id/main_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/ah_logo_iv"
+        android:layout_below="@+id/main_line11"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/app_icon"/>
+
+    <View
+        android:id="@+id/main_line1"
+        android:layout_below="@+id/ah_logo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_line1"
+        android:numColumns="2"
+        android:columnWidth="120dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"/>
+
+</RelativeLayout>

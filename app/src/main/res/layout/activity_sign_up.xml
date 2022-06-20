@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amnesiascheduler.ephraim.com.amnesiascheduler.SignUpActivity"
+    android:background="@drawable/app_back"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Registration Form"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/su_fullname_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/su_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/su_mobile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/su_pass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/su_cpass_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <Button
+                android:id="@+id/su_su_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Register"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/su_si_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already registered? Sign in now!"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="amnesiascheduler.ephraim.com.amnesiascheduler.SignInActivity"
+    android:padding="20dp"
+    android:background="@drawable/app_back">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Sign In"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/si_main_layer"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/si_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/si_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/si_si_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Sign In"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/si_su_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New user? Sign up now!"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
